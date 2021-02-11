@@ -13,3 +13,25 @@ echo "<br>";
 //membuat sendiri detik
 //jam, menit, detik, bulan,tanggal, tahun
 echo date("l", mktime(0, 0, 0, 5, 17, 1997));
+
+//Strtodate
+echo date("l", strtotime("25 aug 1986"));
+
+//membuat function 
+function salam($waktu = "datang", $nama ="Admin"){
+    return "Selamat $waktu, $nama!";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><?= salam("Siang","Jaya"); ?></h1>
+</body>
+</html>
