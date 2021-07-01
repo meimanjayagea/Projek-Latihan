@@ -5,6 +5,7 @@ $mahasiswa = array
   array("Jaya",25,"Pria"),
   array("Yoskomix",30,"Pria")
   );
+  
 for ($baris = 0; $baris < 3; $baris++) {
   echo "<p><b>Baris No: $baris</b></p>";
   echo "<ul>";
